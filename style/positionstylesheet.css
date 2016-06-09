@@ -1,0 +1,39 @@
+<style type="text/css">
+
+.box { 
+  position: absolute; 
+  left: 0;
+  background:#aab; 
+  height: 100px; 
+  width: 100px; 
+  text-align:center;
+}
+
+.example-1, 
+.example-2, 
+.example-3 {
+  width: 80%;
+  margin: 20px auto 50px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.example-1{
+  position: static;
+}
+
+.example-2,
+.example-3{
+  position: relative;
+}
+
+.example-3 .copy {
+  /*
+  for an element to have a z-index, 
+  it must not be staically positioned
+  */
+  position: relative; 
+  z-index: 10;
+}
+
+</style>
